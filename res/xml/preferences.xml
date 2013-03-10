@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<!--
+		Copyright (C) 2008 The Android Open Source Project Licensed under the
+		Apache License, Version 2.0 (the "License"); you may not use this file
+		except in compliance with the License. You may obtain a copy of the
+		License at http://www.apache.org/licenses/LICENSE-2.0 Unless required
+		by applicable law or agreed to in writing, software distributed under
+		the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+		CONDITIONS OF ANY KIND, either express or implied. See the License for
+		the specific language governing permissions and limitations under the
+		License.
+	-->
+
+	<!--
+		This is a primitive example showing the different types of preferences
+		available.
+	-->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory android:title="基本设置">
+		<CheckBoxPreference android:key="only_wifi_load_img"
+			android:title="Wifi才加载网络图片" android:summary="" android:defaultValue="true"
+			android:checked="true" />
+		<EditTextPreference android:key="font_size"
+			android:defaultValue="12" android:title="字体大小" android:summary="默认12"
+			android:dialogTitle="请输入字体大小(数字即可,建议9-18之间)" />
+		<EditTextPreference android:key="left_line_height"
+			android:defaultValue="20" android:title="帖子列表的行高" android:summary="手大设高点可能会比较好按，默认20"
+			android:dialogTitle="请输入数字(数字即可,建议20-50之间)" />
+		<EditTextPreference android:key="right_line_height"
+			android:defaultValue="20" android:title="帖子详细的行高" android:summary="默认20"
+			android:dialogTitle="请输入数字(数字即可,建议20-50之间)" />						
+		<CheckBoxPreference android:key="is_use_portrait"
+			android:title="强制竖屏" android:summary="" android:defaultValue="false"
+			android:checked="false" />
+		<CheckBoxPreference android:key="is_use_gesture"
+			android:title="是否使用手势" android:summary="左右滑动切换列表及查贴" android:defaultValue="false"
+			android:checked="false" />							
+	</PreferenceCategory>
+	<PreferenceCategory android:title="使用模式">
+		<CheckBoxPreference android:key="use_rss_mode"
+			android:title="使用RSS模式" android:summary="退出重进后才生效" android:defaultValue="false"
+			android:checked="false" />
+		<EditTextPreference android:key="list_count"
+			android:defaultValue="50" android:title="列表数量" android:summary="RSS模式下才生效"
+			android:dialogTitle="列表数量(1-200之间的数字)" />
+	</PreferenceCategory>
+	<PreferenceCategory android:title="离线设置">
+		<EditTextPreference android:key="fetch_count"
+			android:defaultValue="200" android:title="离线默认抓取条数" android:summary="默认200"
+			android:dialogTitle="请输入抓取的条数(数字即可,1-200之间)" />
+	</PreferenceCategory>		
+	<!--
+	<PreferenceCategory android:title="缓存 设置">
+		<CheckBoxPreference android:key="use_cache"
+			android:title="启动缓存" android:summary="" android:defaultValue="true"
+			android:checked="true" />
+	</PreferenceCategory>		
+	-->
+</PreferenceScreen>

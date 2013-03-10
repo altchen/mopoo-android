@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:admobsdk="http://schemas.android.com/apk/res/com.altchen.appshare"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"  
+>
+    <ScrollView android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/scrollview" android:layout_weight="1">
+        <LinearLayout android:id="@+id/linearLayout2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical">
+	        <WebView android:layout_width="fill_parent" android:layout_height="fill_parent" android:id="@+id/topic_webview" ></WebView>
+			<WebView android:layout_width="fill_parent" android:layout_height="fill_parent" android:id="@+id/reply_webview" ></WebView>
+        </LinearLayout>
+    </ScrollView>
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content">
+	    <ImageButton
+	    	android:id="@+id/menu_btn"
+			android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_marginRight="10dp"
+	    	android:text="Menu"
+	    	android:src="@drawable/ic_menu"/>
+	    		    
+	    <Button
+	    	android:id="@+id/refresh_btn"
+			android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	android:text="刷新答复"
+	    	android:layout_weight="1"/>	
+    	<Button
+    	android:id="@+id/pagedown_btn"
+		android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:text="到底"
+    	android:layout_weight="1"/>
+    	<Button
+    	android:id="@+id/back_btn"
+		android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:text="返回"
+    	android:layout_weight="1"/>	    	    	
+	</LinearLayout>  
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:admobsdk="http://schemas.android.com/apk/res/com.altchen.appshare"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:layout_weight="1">
+		<TextView android:layout_height="fill_parent" android:text="加载中..."
+			android:layout_width="fill_parent" android:id="@+id/list_loading_textview"
+			android:gravity="center"></TextView>
+		<ListView android:id="@+id/topiclist_list_view"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:layout_marginTop="2dp" />
+	</LinearLayout>
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<ImageButton android:id="@+id/menu_btn"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_marginRight="10dp" android:text="Menu" android:src="@drawable/ic_menu" />
+
+		<Button android:id="@+id/refresh_btn" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:text="刷新"
+			android:layout_weight="1" />
+		<Button android:id="@+id/close_btn" android:layout_width="wrap_content"
+			android:layout_height="fill_parent" android:text=" 退出  "/>				
+	</LinearLayout>
+</LinearLayout>

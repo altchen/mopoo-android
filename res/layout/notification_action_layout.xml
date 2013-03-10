@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<LinearLayout
+    android:minWidth="300px"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    <LinearLayout android:id="@+id/linearLayout1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="2px" android:orientation="vertical" android:gravity="center">
+    <TextView
+    	android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content" 
+    	android:text="是否中断获取离线帖子?\n注意不会马上停止,需等当前帖子ID获取结束."
+    	android:paddingLeft="5px"/>
+		<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center" android:paddingTop="30px">
+        	<Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/ok_btn" android:text="是" android:layout_weight="1"></Button>        	
+        	<Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/cancel_btn" android:text="否" android:layout_weight="1"></Button>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

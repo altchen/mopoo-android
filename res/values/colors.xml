@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+	<drawable name="main_background">#184058</drawable>
+	<drawable name="comm_btn_background">#ff68a448</drawable>
+	<drawable name="btn_div_background">#ff68a448</drawable>
+	<drawable name="select_color">#084d8e</drawable>	
+	<color name="comm_background">#184058</color>
+	<color name="comm_btn_color">#ffffff</color>
+	<color name="app_view_name_color">#fbf8fc</color>
+	<color name="app_view_version_name_color">#da771f</color>
+	<color name="label_color">#f57900</color>
+	<color name="friend_head_view_background">#291315</color>
+	<color name="friend_head_view_text">#fffbba</color>
+	<color name="tab_background">#0e2426</color>
+	
+	
+	<color name="title_background_color">#8c8e8c</color>
+	<drawable name="application_background">#e8e8e8</drawable> 
+	<drawable name="main_menu_background">#55000000</drawable>
+	<drawable name="btn_layout_background">#e8e8e8</drawable>
+	
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"  
+>
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:layout_weight="1">
+		<com.mopoo.utils.MyWebView android:id="@+id/topic_webview" android:layout_width="fill_parent" android:layout_height="fill_parent"></com.mopoo.utils.MyWebView>
+	</LinearLayout>
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content">
+	    <ImageButton
+	    	android:id="@+id/menu_btn"
+			android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:text="Menu"
+	    	android:src="@drawable/ic_menu"/>
+	    		    
+	    <Button
+	    	android:id="@+id/refresh_btn"
+			android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	android:text="刷新"
+	    	android:layout_weight="1"/>    	
+    	<Button
+    	android:id="@+id/pagedown_btn"
+		android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:text="到底"
+    	android:layout_weight="1"/>
+    	<Button
+    	android:id="@+id/back_btn"
+		android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:text="返回"
+    	android:layout_weight="1"/>	    		 	    	
+	</LinearLayout>  
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">食堂</string>
+    <string name="user">用户：</string>
+    <string name="pass">密码：</string>
+    <string name="login">    登录   </string>
+</resources>
